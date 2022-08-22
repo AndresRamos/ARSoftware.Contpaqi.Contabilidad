@@ -8,10 +8,11 @@ namespace ARSoftware.Contpaqi.Contabilidad.Sql.Models.Empresa
         public int Id { get; set; }
         public int? RowVersion { get; set; }
         public int Numero { get; set; }
-        public int IdCuentaContable { get; set; }
+        public int IdCuentaCheque { get; set; }
+        public int IdConciliacionBancaria { get; set; }
         public DateTime Fecha { get; set; }
-        public int? Ejercicio { get; set; }
-        public int? Periodo { get; set; }
+        public DateTime FechaInicial { get; set; }
+        public DateTime FechaFinal { get; set; }
         public bool EstadoConciliacion { get; set; }
         public double? SaldoInicial { get; set; }
         public double? SaldoFinal { get; set; }

@@ -12,7 +12,7 @@ IHost host = Host.CreateDefaultBuilder(args)
         services.AddSingleton<EmpresaSeleccionada>();
 
         // Registrar DbContext de tablas generales
-        services.AddDbContext<ContpaqiContabilidadGeneralesDbContext>((provider, builder) =>
+        services.AddDbContext<ContpaqiContabilidadGeneralesDbContext>(builder =>
         {
             builder.UseSqlServer(ContpaqiContabilidadSqlConnectionStringFactory.CreateContpaqiContabilidadGeneralesConnectionString(
                 context.Configuration.GetConnectionString("Contpaqi")));
@@ -36,14 +36,15 @@ using IServiceScope scope = host.Services.CreateScope();
 // Buscar y seleccionar una empresa
 var generalesDbContext = scope.ServiceProvider.GetRequiredService<ContpaqiContabilidadGeneralesDbContext>();
 
+Console.WriteLine("BUSCANDO EMPRESAS");
 List<ListaEmpresas> empresas = await generalesDbContext.ListaEmpresas.ToListAsync();
 
 foreach (ListaEmpresas empresa in empresas)
 {
-    Console.WriteLine($"{empresas.IndexOf(empresa) + 1} {empresa.Nombre}");
+    Console.WriteLine($"{empresas.IndexOf(empresa) + 1}. {empresa.Nombre}");
 }
 
-string? empresaIndexInput = Console.ReadLine();
+string empresaIndexInput = Console.ReadLine();
 int empresaIndex = int.Parse(empresaIndexInput) - 1;
 
 // Guardar datos de empresa seleecionada
@@ -52,6 +53,7 @@ var empresaSeleccionada = scope.ServiceProvider.GetRequiredService<EmpresaSelecc
 empresaSeleccionada.Actualizar(empresaContpaqi);
 
 // Listar los tipos de poliza de la empresa seleccionada
+Console.WriteLine("BUSCANDO TIPOS DE POLIZA");
 var empresaDbContext = scope.ServiceProvider.GetRequiredService<ContpaqiContabilidadEmpresaDbContext>();
 List<TiposPolizas> tiposPoliza = await empresaDbContext.TiposPolizas.ToListAsync();
 foreach (TiposPolizas tipoPoliza in tiposPoliza)

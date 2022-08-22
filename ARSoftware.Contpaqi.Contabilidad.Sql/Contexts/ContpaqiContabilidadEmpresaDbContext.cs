@@ -95,7 +95,6 @@ namespace ARSoftware.Contpaqi.Contabilidad.Sql.Contexts
         public virtual DbSet<MovimientosPoliza> MovimientosPoliza { get; set; }
         public virtual DbSet<MovimientosPrepoliza> MovimientosPrepoliza { get; set; }
         public virtual DbSet<MovtosEdoCtaBancos> MovtosEdoCtaBancos { get; set; }
-        public virtual DbSet<MovtosEdoCtaContabilidad> MovtosEdoCtaContabilidad { get; set; }
         public virtual DbSet<NombresValoresCV> NombresValoresCV { get; set; }
         public virtual DbSet<PagosProvisionalISR> PagosProvisionalISR { get; set; }
         public virtual DbSet<Parametros> Parametros { get; set; }
@@ -656,11 +655,18 @@ namespace ARSoftware.Contpaqi.Contabilidad.Sql.Contexts
 
             modelBuilder.Entity<AsocMovtsConciliacion>(entity =>
             {
-                entity.Property(e => e.Id).ValueGeneratedNever();
+                entity.HasIndex(e => new { e.IdEdoCuentaContable, e.IdMovtoPoliza, e.IdDocumento }, "Index_1")
+                    .IsUnique();
 
-                entity.Property(e => e.IdMovtoEdoCta)
-                    .IsRequired()
-                    .HasMaxLength(20);
+                entity.HasIndex(e => e.IdEdoCuentaContable, "Index_2");
+
+                entity.HasIndex(e => e.IdMovtoPoliza, "Index_3");
+
+                entity.HasIndex(e => e.IdDocumento, "Index_4");
+
+                entity.HasIndex(e => e.Id, "Index_Id");
+
+                entity.Property(e => e.Id).ValueGeneratedNever();
             });
 
             modelBuilder.Entity<Asociaciones>(entity =>
@@ -2156,6 +2162,10 @@ namespace ARSoftware.Contpaqi.Contabilidad.Sql.Contexts
 
                 entity.Property(e => e.Fecha).HasColumnType("datetime");
 
+                entity.Property(e => e.FechaFinal).HasColumnType("datetime");
+
+                entity.Property(e => e.FechaInicial).HasColumnType("datetime");
+
                 entity.Property(e => e.TimeStamp).HasMaxLength(20);
             });
 
@@ -3372,21 +3382,6 @@ namespace ARSoftware.Contpaqi.Contabilidad.Sql.Contexts
                     .IsRequired()
                     .HasMaxLength(1)
                     .UseCollation("SQL_Latin1_General_CP437_BIN");
-            });
-
-            modelBuilder.Entity<MovtosEdoCtaContabilidad>(entity =>
-            {
-                entity.Property(e => e.Id).ValueGeneratedNever();
-
-                entity.Property(e => e.Concepto).HasMaxLength(100);
-
-                entity.Property(e => e.Fecha).HasColumnType("datetime");
-
-                entity.Property(e => e.FechaAplicacion).HasColumnType("datetime");
-
-                entity.Property(e => e.Numero).HasMaxLength(20);
-
-                entity.Property(e => e.Referencia).HasMaxLength(20);
             });
 
             modelBuilder.Entity<NombresValoresCV>(entity =>

@@ -9,6 +9,6 @@ namespace ARSoftware.Contpaqi.Contabilidad.Sql.Models.Empresa
         public int? RowVersion { get; set; }
         public int IdEdoCuentaContable { get; set; }
         public int IdMovtoPoliza { get; set; }
-        public string IdMovtoEdoCta { get; set; }
+        public int IdDocumento { get; set; }
     }
 }

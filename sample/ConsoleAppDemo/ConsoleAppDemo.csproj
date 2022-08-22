@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>dotnet-ConsoleAppDemo-1B4899B8-C0E0-49C1-A156-427F430B290E</UserSecretsId>
   </PropertyGroup>
