@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARSoftware.Contpaqi.Contabilidad.Sql", "ARSoftware.Contpaqi.Contabilidad.Sql\ARSoftware.Contpaqi.Contabilidad.Sql.csproj", "{E291A2CB-A85B-4E85-917C-C6573559CFBC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ARSoftware.Contpaqi.Contabilidad.Sql", "ARSoftware.Contpaqi.Contabilidad.Sql\ARSoftware.Contpaqi.Contabilidad.Sql.csproj", "{E291A2CB-A85B-4E85-917C-C6573559CFBC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARSoftware.Contpaqi.Contabilidad.Sql.Models", "ARSoftware.Contpaqi.Contabilidad.Sql.Models\ARSoftware.Contpaqi.Contabilidad.Sql.Models.csproj", "{913161F7-372B-4AC9-A85F-2433203DFD9E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ARSoftware.Contpaqi.Contabilidad.Sql.Models", "ARSoftware.Contpaqi.Contabilidad.Sql.Models\ARSoftware.Contpaqi.Contabilidad.Sql.Models.csproj", "{913161F7-372B-4AC9-A85F-2433203DFD9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppDemo", "sample\ConsoleAppDemo\ConsoleAppDemo.csproj", "{4E6D82C6-A168-4965-A955-9C821D20C018}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{913161F7-372B-4AC9-A85F-2433203DFD9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{913161F7-372B-4AC9-A85F-2433203DFD9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{913161F7-372B-4AC9-A85F-2433203DFD9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E6D82C6-A168-4965-A955-9C821D20C018}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E6D82C6-A168-4965-A955-9C821D20C018}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E6D82C6-A168-4965-A955-9C821D20C018}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E6D82C6-A168-4965-A955-9C821D20C018}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
