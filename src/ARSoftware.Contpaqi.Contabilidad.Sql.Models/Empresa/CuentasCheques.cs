@@ -59,5 +59,10 @@ namespace ARSoftware.Contpaqi.Contabilidad.Sql.Models.Empresa
         public string SegContCuentaCheque7 { get; set; }
         public bool? UsarRefIngEgConciliacion { get; set; }
         public bool? EsBaja { get; set; }
+        public string TDCheque { get; set; }
+        public string TDEgreso { get; set; }
+        public string TDIngreso { get; set; }
+        public string TDDeposito { get; set; }
+        public string TDIngresoND { get; set; }
     }
 }

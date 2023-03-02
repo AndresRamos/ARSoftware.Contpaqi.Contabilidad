@@ -471,8 +471,7 @@ namespace ARSoftware.Contpaqi.Contabilidad.Sql.Contexts
 
                 entity.Property(e => e.Clave)
                     .IsRequired()
-                    .HasMaxLength(30)
-                    .UseCollation("SQL_Latin1_General_CP437_BIN");
+                    .HasMaxLength(100);
 
                 entity.Property(e => e.Codigo)
                     .IsRequired()

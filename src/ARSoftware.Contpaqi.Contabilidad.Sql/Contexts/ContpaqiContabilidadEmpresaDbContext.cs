@@ -1544,6 +1544,26 @@ namespace ARSoftware.Contpaqi.Contabilidad.Sql.Contexts
                     .HasMaxLength(60)
                     .UseCollation("SQL_Latin1_General_CP437_BIN");
 
+                entity.Property(e => e.TDCheque)
+                    .HasMaxLength(30)
+                    .HasDefaultValueSql("('')");
+
+                entity.Property(e => e.TDDeposito)
+                    .HasMaxLength(30)
+                    .HasDefaultValueSql("('')");
+
+                entity.Property(e => e.TDEgreso)
+                    .HasMaxLength(30)
+                    .HasDefaultValueSql("('')");
+
+                entity.Property(e => e.TDIngreso)
+                    .HasMaxLength(30)
+                    .HasDefaultValueSql("('')");
+
+                entity.Property(e => e.TDIngresoND)
+                    .HasMaxLength(30)
+                    .HasDefaultValueSql("('')");
+
                 entity.Property(e => e.Telefono)
                     .HasMaxLength(20)
                     .UseCollation("SQL_Latin1_General_CP437_BIN");
