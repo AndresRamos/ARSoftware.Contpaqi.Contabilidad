@@ -2,7 +2,6 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 	<Version>2.1.0</Version>
     <Authors>AR Software</Authors>
     <Description>Modelo de las bases de datos de CONTPAQi Contabilidad version 15.1.1</Description>
@@ -14,10 +13,5 @@
     <PackageReleaseNotes>Se mapearon las bases de datos de la version 15.1.1 de CONTPAQi Contabilidad</PackageReleaseNotes>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Folder Include="Empresa\" />
-    <Folder Include="Generales\" />
-  </ItemGroup>
 
 </Project>
