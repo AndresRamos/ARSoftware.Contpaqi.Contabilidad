@@ -1,17 +1,28 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-	<Version>2.1.0</Version>
-    <Authors>AR Software</Authors>
-    <Description>Modelo de las bases de datos de CONTPAQi Contabilidad version 15.1.1</Description>
-    <Copyright>Copyright © AR Software 2022</Copyright>
-    <PackageProjectUrl>https://github.com/AndresRamos/ARSoftware.Contpaqi.Contabilidad</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/AndresRamos/ARSoftware.Contpaqi.Contabilidad</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
-    <PackageTags>Contpaqi Sql Contabilidad</PackageTags>
-    <PackageReleaseNotes>Se mapearon las bases de datos de la version 15.1.1 de CONTPAQi Contabilidad</PackageReleaseNotes>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<Version>2.2.0</Version>
+		<Authors>AR Software</Authors>
+		<Description>Modelo de las bases de datos de CONTPAQi Contabilidad version 15.2.1</Description>
+		<Copyright>Copyright © AR Software 2023</Copyright>
+		<PackageProjectUrl>https://github.com/AndresRamos/ARSoftware.Contpaqi.Contabilidad</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/AndresRamos/ARSoftware.Contpaqi.Contabilidad</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>Contpaqi Sql Contabilidad</PackageTags>
+		<PackageReleaseNotes>
+			- Se mapearon las bases de datos de la version 15.2.1 (27/10/2022)
+		</PackageReleaseNotes>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageIcon>AR_LOGO03.jpg</PackageIcon>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Include="..\..\images\AR_LOGO03.jpg">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
 
 </Project>
