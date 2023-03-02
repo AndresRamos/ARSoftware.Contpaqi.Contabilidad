@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ARSoftware.Contpaqi.Contabilidad.Sql", "ARSoftware.Contpaqi.Contabilidad.Sql\ARSoftware.Contpaqi.Contabilidad.Sql.csproj", "{E291A2CB-A85B-4E85-917C-C6573559CFBC}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sql", "Sql", "{86B0CB95-F67E-4C74-B95A-4887818BFD57}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ARSoftware.Contpaqi.Contabilidad.Sql.Models", "ARSoftware.Contpaqi.Contabilidad.Sql.Models\ARSoftware.Contpaqi.Contabilidad.Sql.Models.csproj", "{913161F7-372B-4AC9-A85F-2433203DFD9E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ARSoftware.Contpaqi.Contabilidad.Sql.Models", "src\ARSoftware.Contpaqi.Contabilidad.Sql.Models\ARSoftware.Contpaqi.Contabilidad.Sql.Models.csproj", "{DF231F81-9510-49AE-99BD-C97D661DA0CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppDemo", "sample\ConsoleAppDemo\ConsoleAppDemo.csproj", "{4E6D82C6-A168-4965-A955-9C821D20C018}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ARSoftware.Contpaqi.Contabilidad.Sql", "src\ARSoftware.Contpaqi.Contabilidad.Sql\ARSoftware.Contpaqi.Contabilidad.Sql.csproj", "{03F11016-B20F-498E-8AC6-9672D4603E41}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,21 +15,21 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E291A2CB-A85B-4E85-917C-C6573559CFBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E291A2CB-A85B-4E85-917C-C6573559CFBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E291A2CB-A85B-4E85-917C-C6573559CFBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E291A2CB-A85B-4E85-917C-C6573559CFBC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{913161F7-372B-4AC9-A85F-2433203DFD9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{913161F7-372B-4AC9-A85F-2433203DFD9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{913161F7-372B-4AC9-A85F-2433203DFD9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{913161F7-372B-4AC9-A85F-2433203DFD9E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4E6D82C6-A168-4965-A955-9C821D20C018}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4E6D82C6-A168-4965-A955-9C821D20C018}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4E6D82C6-A168-4965-A955-9C821D20C018}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4E6D82C6-A168-4965-A955-9C821D20C018}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF231F81-9510-49AE-99BD-C97D661DA0CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF231F81-9510-49AE-99BD-C97D661DA0CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF231F81-9510-49AE-99BD-C97D661DA0CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF231F81-9510-49AE-99BD-C97D661DA0CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03F11016-B20F-498E-8AC6-9672D4603E41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03F11016-B20F-498E-8AC6-9672D4603E41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03F11016-B20F-498E-8AC6-9672D4603E41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03F11016-B20F-498E-8AC6-9672D4603E41}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DF231F81-9510-49AE-99BD-C97D661DA0CB} = {86B0CB95-F67E-4C74-B95A-4887818BFD57}
+		{03F11016-B20F-498E-8AC6-9672D4603E41} = {86B0CB95-F67E-4C74-B95A-4887818BFD57}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D481790F-B281-444A-ADAE-B4F7C09160AB}

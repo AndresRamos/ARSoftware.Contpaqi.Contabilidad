@@ -15,8 +15,4 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.8" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
   </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\ARSoftware.Contpaqi.Contabilidad.Sql\ARSoftware.Contpaqi.Contabilidad.Sql.csproj" />
-  </ItemGroup>
 </Project>

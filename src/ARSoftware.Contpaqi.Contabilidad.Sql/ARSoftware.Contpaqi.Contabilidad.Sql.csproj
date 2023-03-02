@@ -1,11 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 	<Version>2.1.0</Version>
     <Authors>AR Software</Authors>
-    <Description>Modelo de las bases de datos de CONTPAQi Contabilidad version 15.1.1</Description>
+    <Description>Entity Framework DbContexts para consultar las bases de datos de CONTPAQi Contabilidad version 15.1.1</Description>
     <Copyright>Copyright © AR Software 2022</Copyright>
     <PackageProjectUrl>https://github.com/AndresRamos/ARSoftware.Contpaqi.Contabilidad</PackageProjectUrl>
     <RepositoryUrl>https://github.com/AndresRamos/ARSoftware.Contpaqi.Contabilidad</RepositoryUrl>
@@ -13,24 +15,20 @@
     <PackageTags>Contpaqi Sql Contabilidad</PackageTags>
     <PackageReleaseNotes>Se mapearon las bases de datos de la version 15.1.1 de CONTPAQi Contabilidad</PackageReleaseNotes>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageIcon>AR_LOGO03.jpg</PackageIcon>
-    <ApplicationIcon>AR_LOGO03.ico</ApplicationIcon>
+
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="AR_LOGO03.ico" />
+    <Folder Include="Contexts\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Empresa\" />
-    <Folder Include="Generales\" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.8" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="..\Icons\AR_LOGO03.jpg">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
+    <ProjectReference Include="..\ARSoftware.Contpaqi.Contabilidad.Sql.Models\ARSoftware.Contpaqi.Contabilidad.Sql.Models.csproj" />
   </ItemGroup>
 
 </Project>
