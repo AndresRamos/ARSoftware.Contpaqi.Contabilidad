@@ -4,16 +4,16 @@
 		<TargetFramework>net6.0</TargetFramework>
 		<ImplicitUsings>disable</ImplicitUsings>
 		<Nullable>disable</Nullable>
-		<Version>2.2.0</Version>
+		<Version>2.3.0</Version>
 		<Authors>AR Software</Authors>
-		<Description>Entity Framework DbContexts para consultar las bases de datos de CONTPAQi Contabilidad version 15.2.1</Description>
+		<Description>Entity Framework DbContexts para consultar las bases de datos de CONTPAQi Contabilidad version 15.4.1</Description>
 		<Copyright>Copyright © AR Software 2023</Copyright>
 		<PackageProjectUrl>https://github.com/AndresRamos/ARSoftware.Contpaqi.Contabilidad</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/AndresRamos/ARSoftware.Contpaqi.Contabilidad</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<PackageTags>Contpaqi Sql Contabilidad</PackageTags>
 		<PackageReleaseNotes>
-			- Se mapearon las bases de datos de la version 15.2.1 (27/10/2022)
+			- Se mapearon las bases de datos de la version 15.4.1 (02/03/2023)
 		</PackageReleaseNotes>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>

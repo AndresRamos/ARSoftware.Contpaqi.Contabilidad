@@ -3730,8 +3730,7 @@ namespace ARSoftware.Contpaqi.Contabilidad.Sql.Contexts
                 entity.Property(e => e.FechaRegistro).HasColumnType("datetime");
 
                 entity.Property(e => e.Nombre)
-                    .IsRequired()
-                    .HasMaxLength(200)
+                    .HasMaxLength(254)
                     .UseCollation("SQL_Latin1_General_CP437_BIN");
 
                 entity.Property(e => e.PaginaWeb)
@@ -4302,8 +4301,7 @@ namespace ARSoftware.Contpaqi.Contabilidad.Sql.Contexts
                     .UseCollation("SQL_Latin1_General_CP437_BIN");
 
                 entity.Property(e => e.Nombre)
-                    .IsRequired()
-                    .HasMaxLength(100)
+                    .HasMaxLength(254)
                     .UseCollation("SQL_Latin1_General_CP437_BIN");
 
                 entity.Property(e => e.Pais)
