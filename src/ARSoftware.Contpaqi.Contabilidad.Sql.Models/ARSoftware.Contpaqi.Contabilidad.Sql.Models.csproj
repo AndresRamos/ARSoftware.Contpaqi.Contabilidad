@@ -1,7 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFramework>netstandard2.0</TargetFramework>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>disable</ImplicitUsings>
+		<Nullable>enable</Nullable>
 		<Version>2.3.0</Version>
 		<Authors>AR Software</Authors>
 		<Description>Modelo de las bases de datos de CONTPAQi Contabilidad version 15.4.1</Description>
