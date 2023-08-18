@@ -116,21 +116,21 @@ public partial class ContpaqiContabilidadGeneralesDbContext : DbContext
             entity.HasIndex(e => e.Id, "Index_Id").IsUnique();
 
             entity.Property(e => e.Id).ValueGeneratedNever();
-            entity.Property(e => e.AccessToken).HasMaxLength(2000);
+            entity.Property(e => e.AccessToken).HasMaxLength(3000);
             entity.Property(e => e.AliasBDD)
                 .HasMaxLength(50)
                 .UseCollation("SQL_Latin1_General_CP437_BIN");
             entity.Property(e => e.ArchivoUltimoResp)
                 .HasMaxLength(254)
                 .UseCollation("SQL_Latin1_General_CP437_BIN");
-            entity.Property(e => e.IdToken).HasMaxLength(2000);
+            entity.Property(e => e.IdToken).HasMaxLength(3000);
             entity.Property(e => e.ModulosIntegrados)
                 .HasMaxLength(50)
                 .UseCollation("SQL_Latin1_General_CP437_BIN");
             entity.Property(e => e.Nombre)
                 .HasMaxLength(100)
                 .UseCollation("SQL_Latin1_General_CP437_BIN");
-            entity.Property(e => e.RefreshToken).HasMaxLength(2000);
+            entity.Property(e => e.RefreshToken).HasMaxLength(3000);
             entity.Property(e => e.RutaDatos)
                 .HasMaxLength(254)
                 .UseCollation("SQL_Latin1_General_CP437_BIN");
