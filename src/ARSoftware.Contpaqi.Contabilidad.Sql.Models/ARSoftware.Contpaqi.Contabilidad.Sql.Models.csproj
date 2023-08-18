@@ -27,4 +27,9 @@
 	  </None>
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include="Empresa\" />
+	  <Folder Include="Generales\" />
+	</ItemGroup>
+
 </Project>

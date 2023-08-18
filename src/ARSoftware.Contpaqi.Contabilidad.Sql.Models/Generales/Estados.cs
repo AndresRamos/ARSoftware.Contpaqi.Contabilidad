@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ARSoftware.Contpaqi.Contabilidad.Sql.Models.Generales
+namespace ARSoftware.Contpaqi.Contabilidad.Sql.Models.Generales;
+
+public partial class Estados
 {
-    public partial class Estados
-    {
-        public int Id { get; set; }
-        public int? RowVersion { get; set; }
-        public string Codigo { get; set; }
-        public string Nombre { get; set; }
-    }
+    public int Id { get; set; }
+
+    public int? RowVersion { get; set; }
+
+    public string Codigo { get; set; } = null!;
+
+    public string Nombre { get; set; } = null!;
 }

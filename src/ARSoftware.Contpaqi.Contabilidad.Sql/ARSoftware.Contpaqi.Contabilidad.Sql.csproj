@@ -39,4 +39,8 @@
 		<ProjectReference Include="..\ARSoftware.Contpaqi.Contabilidad.Sql.Models\ARSoftware.Contpaqi.Contabilidad.Sql.Models.csproj" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include="Contexts\" />
+	</ItemGroup>
+
 </Project>
