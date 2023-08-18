@@ -1,21 +1,21 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFramework>netstandard2.0</TargetFramework>
-		<Version>2.3.0</Version>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>disable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<Version>3.0.0</Version>
 		<Authors>AR Software</Authors>
-		<Description>Modelo de las bases de datos de CONTPAQi Contabilidad version 15.4.1</Description>
+		<Description>Modelo de las bases de datos de CONTPAQi Contabilidad version 15.5.0</Description>
 		<Copyright>Copyright © AR Software 2023</Copyright>
 		<PackageProjectUrl>https://github.com/AndresRamos/ARSoftware.Contpaqi.Contabilidad</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/AndresRamos/ARSoftware.Contpaqi.Contabilidad</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<PackageTags>Contpaqi Sql Contabilidad</PackageTags>
-		<PackageReleaseNotes>
-			- Se mapearon las bases de datos de la version 15.4.1 (02/03/2023)
-		</PackageReleaseNotes>
-		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<PackageIcon>AR_LOGO03.jpg</PackageIcon>
+		<IncludeSymbols>True</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 	</PropertyGroup>
 
 	<ItemGroup>
