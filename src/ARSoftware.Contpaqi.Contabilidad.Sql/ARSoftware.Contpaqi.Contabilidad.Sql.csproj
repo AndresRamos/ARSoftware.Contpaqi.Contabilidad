@@ -4,9 +4,9 @@
 		<TargetFramework>net7.0</TargetFramework>
 		<ImplicitUsings>disable</ImplicitUsings>
 		<Nullable>enable</Nullable>
-		<Version>3.1.0</Version>
+		<Version>3.1.1</Version>
 		<Authors>AR Software</Authors>
-		<Description>Entity Framework DbContexts para consultar las bases de datos de CONTPAQi Contabilidad version 16.0.3</Description>
+		<Description>Entity Framework DbContexts para consultar las bases de datos de CONTPAQi Contabilidad version 16.1.1</Description>
 		<Copyright>Copyright © AR Software 2023</Copyright>
 		<PackageProjectUrl>https://github.com/AndresRamos/ARSoftware.Contpaqi.Contabilidad</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/AndresRamos/ARSoftware.Contpaqi.Contabilidad</RepositoryUrl>
