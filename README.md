@@ -1,0 +1,1 @@
+# ARSoftware.Contpaqi.Contabilidad
