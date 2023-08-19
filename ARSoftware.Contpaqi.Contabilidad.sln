@@ -9,7 +9,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ARSoftware.Contpaqi.Contabi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ARSoftware.Contpaqi.Contabilidad.Sql", "src\ARSoftware.Contpaqi.Contabilidad.Sql\ARSoftware.Contpaqi.Contabilidad.Sql.csproj", "{03F11016-B20F-498E-8AC6-9672D4603E41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sql.MigrationsStartupProject", "src\Sql.MigrationsStartupProject\Sql.MigrationsStartupProject.csproj", "{3240707B-FD4A-4424-BCF8-C1B83D25637B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sql.MigrationsStartupProject", "src\Sql.MigrationsStartupProject\Sql.MigrationsStartupProject.csproj", "{3240707B-FD4A-4424-BCF8-C1B83D25637B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{66F8B0BE-121A-4F36-8D79-144B8315BEA6}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{F4C79CE0-C07F-47BA-8184-CFFF311F1960}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sql.ConsoleApp", "samples\Sql.ConsoleApp\Sql.ConsoleApp.csproj", "{922CAE44-B5A4-4B6C-8C2A-07181F17429B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +38,10 @@ Global
 		{3240707B-FD4A-4424-BCF8-C1B83D25637B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3240707B-FD4A-4424-BCF8-C1B83D25637B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3240707B-FD4A-4424-BCF8-C1B83D25637B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{922CAE44-B5A4-4B6C-8C2A-07181F17429B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{922CAE44-B5A4-4B6C-8C2A-07181F17429B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{922CAE44-B5A4-4B6C-8C2A-07181F17429B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{922CAE44-B5A4-4B6C-8C2A-07181F17429B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,6 +50,7 @@ Global
 		{DF231F81-9510-49AE-99BD-C97D661DA0CB} = {86B0CB95-F67E-4C74-B95A-4887818BFD57}
 		{03F11016-B20F-498E-8AC6-9672D4603E41} = {86B0CB95-F67E-4C74-B95A-4887818BFD57}
 		{3240707B-FD4A-4424-BCF8-C1B83D25637B} = {86B0CB95-F67E-4C74-B95A-4887818BFD57}
+		{922CAE44-B5A4-4B6C-8C2A-07181F17429B} = {F4C79CE0-C07F-47BA-8184-CFFF311F1960}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D481790F-B281-444A-ADAE-B4F7C09160AB}

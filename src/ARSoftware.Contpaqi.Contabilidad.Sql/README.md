@@ -1,10 +1,4 @@
-# AR SOFTWARE CONTPAQI CONTABILIDAD
-
-En este repositorio contiene proyectos que te permiten consultar las bases de datos del sistema de CONTPAQi Contabilidad con Entity Framework.
-
-# Proyectos
-
-## ARSoftware.Contpaqi.Contabilidad.Sql
+# AR SOFTWARE CONTPAQI CONTABILIDAD SQL
 
 Este proyecto contiene los DbContext para consultar las bases de datos de CONTPAQi Contabilidad. Podras consultar las bases de datos de Generales y de Empresas.
 
@@ -14,18 +8,6 @@ Puedes instalar el proyecto utilizando [NuGet](https://www.nuget.org/packages/AR
 
 ```
 dotnet add package ARSoftware.Contpaqi.Contabilidad.Sql
-```
-
-## ARSoftware.Contpaqi.Contabilidad.Sql.Models
-
-Este proyecto contiene las clases mapeadas por Entity Framework que representan las tablas de las bases de datos de CONTPAQi Contabilidad.
-
-## Instalación
-
-Puedes instalar el proyecto utilizando [NuGet](https://www.nuget.org/packages/ARSoftware.Contpaqi.Contabilidad.Sql.Models):
-
-```
-dotnet add package ARSoftware.Contpaqi.Contabilidad.Sql.Models
 ```
 
 # Uso
@@ -106,13 +88,3 @@ public sealed class BuscarTiposPolizaConDbContext
     }
 }
 ```
-
-# Consultoria
-Si lo que buscas es contratar a un desarrollador para crear tu aplicación o interfaz para trabajar con los sistema de CONTPAQi, puedes contactarme directamente desde mi [página web](https://www.arsoft.net/).
-
-Me especializo en el desarrollo de aplicaciones e interfaces para los sistemas de CONTPAQi y me gustaría agendar una reunión contigo para platicar más sobre tus necesidades y requerimientos.
-
-# Como me puedes ayudar?
-
-## Dame Una Estrella
-Si estas utilizando alguno de los proyectos dentro de este repositorio y es de beneficio para ti o tu organizacion dame una estrella. Te lo agradeceria!
