@@ -18,6 +18,8 @@ public partial class ContpaqiContabilidadGeneralesDbContext : DbContext
 
     public virtual DbSet<Estados> Estados { get; set; }
 
+    public virtual DbSet<HistorialContrasenas> HistorialContrasenas { get; set; }
+
     public virtual DbSet<INPCs> INPCs { get; set; }
 
     public virtual DbSet<ListaEmpresas> ListaEmpresas { get; set; }
@@ -88,6 +90,24 @@ public partial class ContpaqiContabilidadGeneralesDbContext : DbContext
             entity.Property(e => e.Nombre)
                 .HasMaxLength(100)
                 .UseCollation("SQL_Latin1_General_CP437_BIN");
+        });
+
+        modelBuilder.Entity<HistorialContrasenas>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__Historia__3214EC0750890EE3");
+
+            entity.HasIndex(e => new { e.CodigoUsuario, e.FechaCambio }, "Index_1").IsUnique();
+
+            entity.HasIndex(e => e.Id, "Index_Id").IsUnique();
+
+            entity.Property(e => e.Id).ValueGeneratedNever();
+            entity.Property(e => e.Clave)
+                .HasMaxLength(100)
+                .UseCollation("SQL_Latin1_General_CP437_BIN");
+            entity.Property(e => e.CodigoUsuario)
+                .HasMaxLength(20)
+                .UseCollation("SQL_Latin1_General_CP437_BIN");
+            entity.Property(e => e.FechaCambio).HasColumnType("datetime");
         });
 
         modelBuilder.Entity<INPCs>(entity =>
@@ -399,10 +419,18 @@ public partial class ContpaqiContabilidadGeneralesDbContext : DbContext
 
             entity.Property(e => e.Id).ValueGeneratedNever();
             entity.Property(e => e.Clave).HasMaxLength(100);
+            entity.Property(e => e.ClaveTemporal).HasDefaultValue(false);
             entity.Property(e => e.Codigo)
                 .HasMaxLength(20)
                 .UseCollation("SQL_Latin1_General_CP437_BIN");
+            entity.Property(e => e.ExpiraClave).HasDefaultValue(false);
             entity.Property(e => e.FechaRegistro).HasColumnType("datetime");
+            entity.Property(e => e.FechaUltimaActividad)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
+            entity.Property(e => e.FechaVencimientoClave)
+                .HasDefaultValueSql("(getdate()+(90))")
+                .HasColumnType("datetime");
             entity.Property(e => e.Guid)
                 .HasMaxLength(36)
                 .HasDefaultValueSql("(newid())")
@@ -419,6 +447,9 @@ public partial class ContpaqiContabilidadGeneralesDbContext : DbContext
             entity.Property(e => e.eMailClave)
                 .HasMaxLength(100)
                 .UseCollation("SQL_Latin1_General_CP437_BIN");
+            entity.Property(e => e.eMailRecuperacion)
+                .HasMaxLength(250)
+                .HasDefaultValue("");
         });
 
         OnModelCreatingPartial(modelBuilder);

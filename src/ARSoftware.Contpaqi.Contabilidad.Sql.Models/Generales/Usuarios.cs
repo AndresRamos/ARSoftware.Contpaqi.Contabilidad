@@ -38,4 +38,14 @@ public partial class Usuarios
     public string? eMail { get; set; }
 
     public string? eMailClave { get; set; }
+
+    public string? eMailRecuperacion { get; set; }
+
+    public DateTime? FechaUltimaActividad { get; set; }
+
+    public DateTime? FechaVencimientoClave { get; set; }
+
+    public bool? ClaveTemporal { get; set; }
+
+    public bool? ExpiraClave { get; set; }
 }

@@ -891,7 +891,7 @@ public partial class ContpaqiContabilidadEmpresaDbContext : DbContext
             entity.Property(e => e.Guid)
                 .HasMaxLength(36)
                 .UseCollation("SQL_Latin1_General_CP437_BIN");
-            entity.Property(e => e.NumAsoc).HasDefaultValueSql("((0))");
+            entity.Property(e => e.NumAsoc).HasDefaultValue(0);
             entity.Property(e => e.OtroMetodoDePago)
                 .HasMaxLength(2)
                 .UseCollation("SQL_Latin1_General_CP437_BIN");
@@ -980,7 +980,7 @@ public partial class ContpaqiContabilidadEmpresaDbContext : DbContext
             entity.Property(e => e.BancoOrigen)
                 .HasMaxLength(10)
                 .UseCollation("SQL_Latin1_General_CP437_BIN");
-            entity.Property(e => e.BancoOrigenId).HasDefaultValueSql("((0))");
+            entity.Property(e => e.BancoOrigenId).HasDefaultValue(0);
             entity.Property(e => e.Codigo)
                 .HasMaxLength(40)
                 .UseCollation("SQL_Latin1_General_CP437_BIN");
@@ -1000,7 +1000,7 @@ public partial class ContpaqiContabilidadEmpresaDbContext : DbContext
             entity.Property(e => e.CuentaOrigen)
                 .HasMaxLength(50)
                 .UseCollation("SQL_Latin1_General_CP437_BIN");
-            entity.Property(e => e.Diario).HasDefaultValueSql("((0))");
+            entity.Property(e => e.Diario).HasDefaultValue(0);
             entity.Property(e => e.SegContCliente1)
                 .HasMaxLength(30)
                 .UseCollation("SQL_Latin1_General_CP437_BIN");
@@ -1345,7 +1345,7 @@ public partial class ContpaqiContabilidadEmpresaDbContext : DbContext
             entity.Property(e => e.Ejecutivo)
                 .HasMaxLength(60)
                 .UseCollation("SQL_Latin1_General_CP437_BIN");
-            entity.Property(e => e.EsBaja).HasDefaultValueSql("((0))");
+            entity.Property(e => e.EsBaja).HasDefaultValue(false);
             entity.Property(e => e.Fax)
                 .HasMaxLength(20)
                 .UseCollation("SQL_Latin1_General_CP437_BIN");
@@ -1407,19 +1407,19 @@ public partial class ContpaqiContabilidadEmpresaDbContext : DbContext
                 .UseCollation("SQL_Latin1_General_CP437_BIN");
             entity.Property(e => e.TDCheque)
                 .HasMaxLength(30)
-                .HasDefaultValueSql("('')");
+                .HasDefaultValue("");
             entity.Property(e => e.TDDeposito)
                 .HasMaxLength(30)
-                .HasDefaultValueSql("('')");
+                .HasDefaultValue("");
             entity.Property(e => e.TDEgreso)
                 .HasMaxLength(30)
-                .HasDefaultValueSql("('')");
+                .HasDefaultValue("");
             entity.Property(e => e.TDIngreso)
                 .HasMaxLength(30)
-                .HasDefaultValueSql("('')");
+                .HasDefaultValue("");
             entity.Property(e => e.TDIngresoND)
                 .HasMaxLength(30)
-                .HasDefaultValueSql("('')");
+                .HasDefaultValue("");
             entity.Property(e => e.Telefono)
                 .HasMaxLength(20)
                 .UseCollation("SQL_Latin1_General_CP437_BIN");
@@ -1432,7 +1432,7 @@ public partial class ContpaqiContabilidadEmpresaDbContext : DbContext
             entity.Property(e => e.Titular3)
                 .HasMaxLength(60)
                 .UseCollation("SQL_Latin1_General_CP437_BIN");
-            entity.Property(e => e.UsarRefIngEgConciliacion).HasDefaultValueSql("((0))");
+            entity.Property(e => e.UsarRefIngEgConciliacion).HasDefaultValue(false);
         });
 
         modelBuilder.Entity<CuentasChequesAlias>(entity =>
@@ -1807,7 +1807,7 @@ public partial class ContpaqiContabilidadEmpresaDbContext : DbContext
             entity.Property(e => e.Guid)
                 .HasMaxLength(36)
                 .UseCollation("SQL_Latin1_General_CP437_BIN");
-            entity.Property(e => e.Propina).HasDefaultValueSql("((0))");
+            entity.Property(e => e.Propina).HasDefaultValue(0.0);
             entity.Property(e => e.Referencia)
                 .HasMaxLength(20)
                 .UseCollation("SQL_Latin1_General_CP437_BIN");
@@ -1981,7 +1981,7 @@ public partial class ContpaqiContabilidadEmpresaDbContext : DbContext
             entity.Property(e => e.Guid)
                 .HasMaxLength(36)
                 .UseCollation("SQL_Latin1_General_CP437_BIN");
-            entity.Property(e => e.NumAsoc).HasDefaultValueSql("((0))");
+            entity.Property(e => e.NumAsoc).HasDefaultValue(0);
             entity.Property(e => e.OtroMetodoDePago)
                 .HasMaxLength(2)
                 .UseCollation("SQL_Latin1_General_CP437_BIN");
@@ -2376,7 +2376,7 @@ public partial class ContpaqiContabilidadEmpresaDbContext : DbContext
             entity.Property(e => e.Guid)
                 .HasMaxLength(36)
                 .UseCollation("SQL_Latin1_General_CP437_BIN");
-            entity.Property(e => e.NumAsoc).HasDefaultValueSql("((0))");
+            entity.Property(e => e.NumAsoc).HasDefaultValue(0);
             entity.Property(e => e.NumeroCheque)
                 .HasMaxLength(100)
                 .UseCollation("SQL_Latin1_General_CP437_BIN");
@@ -2448,7 +2448,7 @@ public partial class ContpaqiContabilidadEmpresaDbContext : DbContext
             entity.Property(e => e.Guid)
                 .HasMaxLength(36)
                 .UseCollation("SQL_Latin1_General_CP437_BIN");
-            entity.Property(e => e.NumAsoc).HasDefaultValueSql("((0))");
+            entity.Property(e => e.NumAsoc).HasDefaultValue(0);
             entity.Property(e => e.NumeroCheque)
                 .HasMaxLength(100)
                 .UseCollation("SQL_Latin1_General_CP437_BIN");
@@ -3071,7 +3071,7 @@ public partial class ContpaqiContabilidadEmpresaDbContext : DbContext
             entity.Property(e => e.TitularCer)
                 .HasMaxLength(254)
                 .IsUnicode(false)
-                .HasDefaultValueSql("('')");
+                .HasDefaultValue("");
             entity.Property(e => e.VersionBDD)
                 .HasMaxLength(10)
                 .UseCollation("SQL_Latin1_General_CP437_BIN");
@@ -3163,7 +3163,7 @@ public partial class ContpaqiContabilidadEmpresaDbContext : DbContext
             entity.Property(e => e.CodigoPostal)
                 .HasMaxLength(10)
                 .IsUnicode(false)
-                .HasDefaultValueSql("('')");
+                .HasDefaultValue("");
             entity.Property(e => e.CtaContableGasto)
                 .HasMaxLength(30)
                 .UseCollation("SQL_Latin1_General_CP437_BIN");
@@ -3598,7 +3598,7 @@ public partial class ContpaqiContabilidadEmpresaDbContext : DbContext
             entity.HasIndex(e => e.Id, "Index_Id").IsUnique();
 
             entity.Property(e => e.Id).ValueGeneratedNever();
-            entity.Property(e => e.BancoDestinoId).HasDefaultValueSql("((0))");
+            entity.Property(e => e.BancoDestinoId).HasDefaultValue(0);
             entity.Property(e => e.CURP)
                 .HasMaxLength(50)
                 .UseCollation("SQL_Latin1_General_CP437_BIN");
@@ -3630,7 +3630,7 @@ public partial class ContpaqiContabilidadEmpresaDbContext : DbContext
             entity.Property(e => e.CuentaClabe)
                 .HasMaxLength(50)
                 .UseCollation("SQL_Latin1_General_CP437_BIN");
-            entity.Property(e => e.Diario).HasDefaultValueSql("((0))");
+            entity.Property(e => e.Diario).HasDefaultValue(0);
             entity.Property(e => e.IdFiscal)
                 .HasMaxLength(50)
                 .UseCollation("SQL_Latin1_General_CP437_BIN");
@@ -3780,15 +3780,15 @@ public partial class ContpaqiContabilidadEmpresaDbContext : DbContext
             entity.Property(e => e.TipoRelacion)
                 .HasMaxLength(50)
                 .IsUnicode(false)
-                .HasDefaultValueSql("('')");
+                .HasDefaultValue("");
             entity.Property(e => e.UUIDAsociado)
                 .HasMaxLength(36)
                 .IsUnicode(false)
-                .HasDefaultValueSql("('')");
+                .HasDefaultValue("");
             entity.Property(e => e.UUIDRetencion)
                 .HasMaxLength(36)
                 .UseCollation("SQL_Latin1_General_CP437_BIN");
-            entity.Property(e => e.Version).HasDefaultValueSql("((1))");
+            entity.Property(e => e.Version).HasDefaultValue(1);
             entity.Property(e => e.XMLComplemento)
                 .UseCollation("SQL_Latin1_General_CP437_BIN")
                 .HasColumnType("ntext");
