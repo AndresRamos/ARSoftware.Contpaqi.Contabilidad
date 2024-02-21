@@ -6,7 +6,7 @@
 		<Nullable>enable</Nullable>
 		<Version>3.2.0</Version>
 		<Authors>AR Software</Authors>
-		<Description>Modelo de las bases de datos de CONTPAQi Contabilidad version 16.1.1</Description>
+		<Description>Modelo de las bases de datos de CONTPAQi Contabilidad version 16.2.1</Description>
 		<Copyright>Copyright © AR Software 2024</Copyright>
 		<PackageProjectUrl>https://github.com/AndresRamos/ARSoftware.Contpaqi.Contabilidad</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/AndresRamos/ARSoftware.Contpaqi.Contabilidad</RepositoryUrl>
