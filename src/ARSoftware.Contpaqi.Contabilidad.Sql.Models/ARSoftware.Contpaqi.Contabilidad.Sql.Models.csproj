@@ -4,9 +4,9 @@
 		<TargetFramework>net8.0</TargetFramework>
 		<ImplicitUsings>disable</ImplicitUsings>
 		<Nullable>enable</Nullable>
-		<Version>3.2.0</Version>
+		<Version>3.2.1</Version>
 		<Authors>AR Software</Authors>
-		<Description>Modelo de las bases de datos de CONTPAQi Contabilidad version 16.2.1</Description>
+		<Description>Modelo de las bases de datos de CONTPAQi Contabilidad version 16.3.0</Description>
 		<Copyright>Copyright © AR Software 2024</Copyright>
 		<PackageProjectUrl>https://github.com/AndresRamos/ARSoftware.Contpaqi.Contabilidad</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/AndresRamos/ARSoftware.Contpaqi.Contabilidad</RepositoryUrl>
